@@ -16,28 +16,54 @@
         header {
             background-color: #0073e6;
             color: white;
-            padding: 1em 0;
-            text-align: center;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-left img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .header-left h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .header-left p {
+            margin: 0;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        .header-right a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .header-right img {
+            width: 24px;
+            height: 24px;
         }
         nav {
-            text-align: left;
+            text-align: center;
             padding: 1em 0;
             background-color: #005bb5;
         }
         nav a {
-            color: silver;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
         }
         section {
             padding: 2em;
         }
-        h1, h2, h3 {
+        h2, h3 {
             text-align: center;
             font-family: 'Arial Black', sans-serif;
-        }
-        h1 {
-            font-size: 2.5em;
         }
         h2 {
             font-size: 2em;
@@ -73,17 +99,78 @@
             text-decoration: none;
         }
         .logo {
-            max-width: 100px;
+            max-width: 150px;
             height: auto;
             margin: 1em 0;
+        }
+        .tagline {
+            color: #0073e6;
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 0.75em 1.5em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em 0;
+        }
+        .contact-info p {
+            margin: 0.5em 0;
+        }
+        .contact-info img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="mylogo.jfif" alt="My Logo" class="logo">
-        <h1>Daniel Ayamba Adamu</h1>
-        <p>A Professional Teacher, Graphic Designer, Web Developer, DevOps Engineer, and System Admin</p>
+        <div class="header-left">
+            <img src="danielayamba.png" alt="My Logo" class="logo">
+            <div>
+                <h1>Daniel Ayamba Adamu</h1>
+                <p class="tagline">Love, empathy for humanity</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="https://github.com/DanielAyamba" target="_blank">
+                <img src="github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/dan.ada.5851" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/DanielAyamba3?t=8oTZQ7TacIufs9kkpnbJzg&s=09" target="_blank">
+                <img src="twitter-icon.png" alt="X">
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-ayamba-adamu-56a256235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
     </header>
     <nav>
         <a href="#about">About</a>
@@ -126,16 +213,16 @@
         <h2>Projects</h2>
         <div class="projects">
             <div>
-                <h3>Project 1</h3>
-                <p>Description of a significant project.</p>
+                <h3>Project 1: Educational Platform</h3>
+                <p>Developed a comprehensive educational platform that enables interactive learning and real-time feedback for students. Utilized HTML, CSS, JavaScript, and a backend framework to create a seamless user experience.</p>
             </div>
             <div>
-                <h3>Project 2</h3>
-                <p>Description of another major project.</p>
+                <h3>Project 2: Graphic Design Portfolio</h3>
+                <p>Created a stunning graphic design portfolio showcasing various design projects including logos, brochures, and promotional materials. Emphasized on clean design and user-friendly navigation.</p>
             </div>
             <div>
-                <h3>Project 3</h3>
-                <p>Description of another major project.</p>
+                <h3>Project 3: DevOps Pipeline Automation</h3>
+                <p>Implemented a CI/CD pipeline for automating the deployment process in a cloud environment. This project significantly reduced the deployment time and minimized manual intervention.</p>
             </div>
         </div>
     </section>
@@ -143,12 +230,14 @@
         <h2>Experience</h2>
         <div class="experience">
             <div>
-                <h3>Company 1</h3>
-                <p>Role: Description of role and responsibilities.</p>
+                <h3>Company A</h3>
+                <p>Role: Lead Web Developer</p>
+                <p>Responsibilities: Managed a team of developers to create robust web applications. Led the design and development of client projects, ensuring timely delivery and high quality.</p>
             </div>
             <div>
-                <h3>Company 2</h3>
-                <p>Role: Description of role and responsibilities.</p>
+                <h3>Company B</h3>
+                <p>Role: System Administrator</p>
+                <p>Responsibilities: Oversaw the maintenance and administration of the company’s IT infrastructure. Implemented security measures and provided technical support to staff.</p>
             </div>
         </div>
     </section>
@@ -156,7 +245,7 @@
         <h2>Education</h2>
         <div class="education">
             <div>
-                <h3>AlX</h3>
+                <h3>ALX</h3>
                 <p>Software Engineering, 2023-2024</p>
             </div>
             <div>
@@ -165,12 +254,35 @@
             </div>
             <div>
                 <h3>Accra College of Education (ACCE)</h3>
-                <p>Diploma in Education, 2015-2018</p>
+                <p>Diploma in Basic Education, 2015-2018</p>
             </div>
             <div>
-                <h3>Notre Dame</h3>
+                <h3>Notre Dame Seminary SHS</h3>
                 <p>General Arts, 2011-2014</p>
             </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><img src="location-icon.png" alt="Location"> Kanda, Accra, Street: Kanda Highway</p>
+            <p><img src="email-icon.png" alt="Email"> Email: <a href="mailto:danielayamba05@gmail.com">danielayamba05@gmail.com</a></p>
+            <p><img src="whatsapp-icon.png" alt="WhatsApp"> WhatsApp: +233503612376</p>
+            <p><img src="phone-icon.png" alt="Phone"> Call: +233544076708</p>
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
     <footer>
