@@ -3,30 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <title>Daniel Ayamba Adamu | Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: left;
+            padding: 1em 0;
+            background-color: #005bb5;
+        }
+        nav a {
+            color: silver;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            font-family: 'Arial Black', sans-serif;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+            color: #0073e6;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .skills, .projects, .experience, .education {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 2em 0;
+        }
+        .skills div, .projects div, .experience div, .education div {
+            flex: 1;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #0073e6;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+            margin: 1em 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="mylogo.jfif" alt="My Logo" class="logo">
+        <h1>Daniel Ayamba Adamu</h1>
+        <p>A Professional Teacher, Graphic Designer, Web Developer, DevOps Engineer, and System Admin</p>
     </header>
-    <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>This is a brief introduction about me and my work.</p>
-        </section>
-        <!-- More sections can be added here -->
-    </main>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>Welcome!</h2>
+        <p>Hello! I'm Daniel Ayamba Adamu, a multifaceted professional with expertise in teaching, graphic design, web development, DevOps engineering, and system administration. Welcome to my personal portfolio where you can explore my skills, projects, and professional journey.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>
+                <h3>Professional Teacher</h3>
+                <p>Expert in educational methodologies and classroom management.</p>
+            </div>
+            <div>
+                <h3>Graphic Designer</h3>
+                <p>Proficient in Adobe Creative Suite, including Photoshop, Illustrator, and InDesign.</p>
+            </div>
+            <div>
+                <h3>Web Developer</h3>
+                <p>Experienced in HTML, CSS, JavaScript, and modern web frameworks.</p>
+            </div>
+            <div>
+                <h3>DevOps Engineer</h3>
+                <p>Skilled in continuous integration/continuous deployment (CI/CD) pipelines and cloud services.</p>
+            </div>
+            <div>
+                <h3>System Admin</h3>
+                <p>Knowledgeable in network administration, system configuration, and IT support.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div>
+                <h3>Project 1</h3>
+                <p>Description of a significant project.</p>
+            </div>
+            <div>
+                <h3>Project 2</h3>
+                <p>Description of another major project.</p>
+            </div>
+            <div>
+                <h3>Project 3</h3>
+                <p>Description of another major project.</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div>
+                <h3>Company 1</h3>
+                <p>Role: Description of role and responsibilities.</p>
+            </div>
+            <div>
+                <h3>Company 2</h3>
+                <p>Role: Description of role and responsibilities.</p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <div>
+                <h3>AlX</h3>
+                <p>Software Engineering, 2023-2024</p>
+            </div>
+            <div>
+                <h3>University of Cape Coast (UCC)</h3>
+                <p>English Language Studies, 2020-2022</p>
+            </div>
+            <div>
+                <h3>Accra College of Education (ACCE)</h3>
+                <p>Diploma in Education, 2015-2018</p>
+            </div>
+            <div>
+                <h3>Notre Dame</h3>
+                <p>General Arts, 2011-2014</p>
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Contact me at <a href="mailto:daniel@example.com">daniel@example.com</a></p>
     </footer>
-    <script src="scripts.js"></script> <!-- Link to JavaScript file -->
 </body>
 </html>
