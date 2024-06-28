@@ -1,9 +1,7 @@
-  =>  Template Name    : ProMan - Personal Portfolio HTML Template
+  =>  Template Name    : Daniel Ayaamba Adaamu - Personal Portfolio HTML Template
 
-  =>  Template Link    : https://htmlcodex.com/personal-portfolio-html-template
+  =>  Template Link    : personal-portfolio-html-template
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+  =>  Template License : read the LICENSE
 
-  =>  Template Author  : HTML Codex
-
-  =>  Author Website   : https://htmlcodex.com
+  =>  Template Author  : Daniel Ayamba Adamu
