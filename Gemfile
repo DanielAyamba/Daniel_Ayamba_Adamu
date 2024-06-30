@@ -1,1 +1,1 @@
-gem "portfolio"
+gem "Portfolio Jekyll Theme"
