@@ -1,1 +1,51 @@
-theme: Portfolio Jekyll Theme
+# Site settings
+title: danielayamba
+description: Personal Portfolio Website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://danielayamba.github.io/DanielAyamba" # the base hostname & protocol for your site
+
+# Theme settings (if using a theme)
+theme: minimal-mistakes-jekyll
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Social media links
+social:
+  github: DanielAyamba
+  twitter: Daniel Adamu
+  linkedin: Daniel Ayamba Adamu
+
+# Navigation links (example)
+header_pages:
+  - https://danielayamba.github.io/DanielAyamba/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Pagination
+paginate: 5
+
+# Permalinks
+permalink: /:title/
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author_profile: true
+
+# Collections (if using)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
